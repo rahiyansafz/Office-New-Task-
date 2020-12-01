@@ -140,4 +140,16 @@ export class AppComponent {
       }
     }
   }
+  addingDown(names: any, indexTwo: number): void {
+    if (names) {
+      const yT = this.checkIfExists(names, this.anArray);
+      // console.log(y);
+      if (yT === -1) {
+        const aT = this.theArray.splice(indexTwo, 1);
+        // console.log('hello', a);
+        console.log(indexTwo, aT);
+        this.anArray.push(aT[0]);
+      }
+    }
+  }
 }

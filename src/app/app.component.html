@@ -11,8 +11,9 @@
     >
       <span (click)="addingUp(item, i)" class="arrow">&#x27A1;</span>
       <!-- [style.color]="item.name === selected ? 'gray' : 'black'" -->
-      {{ item.name
-      }}<span (click)="removeFromList(item)" class="close">&times;</span>
+      {{ item.name }}<span (click)="removeFromList(item)" class="close"
+        >&times;</span
+      >
     </li>
   </ul>
 </div>
@@ -31,11 +32,11 @@
 <div>
   <ul>
     <li
-      *ngFor="let names of theArray"
+      *ngFor="let names of theArray; let j = indexTwo"
       [class.clicked]="names.name === clicked"
       (click)="clicks(names)"
     >
-      <span class="arrow">&#x27A1;</span>
+      <span (click)="addingDown(names, j)" class="arrow">&#x27A1;</span>
       {{ names.name }}
       <span (click)="deleting(names)" class="close">&times;</span>
     </li>
