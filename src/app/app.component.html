@@ -1,0 +1,53 @@
+<p (mouseover)="OnLightOn()">
+  The Light Is <span *ngIf="LightOn">On!</span
+  ><span *ngIf="!LightOn">Off!</span>
+</p>
+<div>
+  <ul>
+    <li
+      *ngFor="let item of anArray; let i = index"
+      [class.selected]="item.name === selected"
+      (click)="select(item)"
+    >
+      <span (click)="addingUp(item, i)" class="arrow">&#x27A1;</span>
+      <!-- [style.color]="item.name === selected ? 'gray' : 'black'" -->
+      {{ item.name
+      }}<span (click)="removeFromList(item)" class="close">&times;</span>
+    </li>
+  </ul>
+</div>
+<input
+  #pushed
+  type="text"
+  (input)="highlightTest(pushed.value)"
+  (keyup.enter)="arrayPushing(pushed.value); pushed.value = ''"
+/>
+
+<button (click)="arrayPushing(pushed.value); pushed.value = ''">Add</button>
+<br />
+
+<app-text-detail [inputObj]="anObj"></app-text-detail>
+
+<div>
+  <ul>
+    <li
+      *ngFor="let names of theArray"
+      [class.clicked]="names.name === clicked"
+      (click)="clicks(names)"
+    >
+      <span class="arrow">&#x27A1;</span>
+      {{ names.name }}
+      <span (click)="deleting(names)" class="close">&times;</span>
+    </li>
+  </ul>
+</div>
+<input
+  #give
+  type="text"
+  (input)="colored(give.value)"
+  (keyup.enter)="arrayAdding(give.value); give.value = ''"
+/>
+
+<button (click)="arrayAdding(give.value); give.value = ''">Add</button>
+
+<app-obj-detail [secObj]="nameObj"></app-obj-detail>
