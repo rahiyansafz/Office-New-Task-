@@ -92,6 +92,7 @@ export class AppComponent {
     this.selected = item.name;
     this.anObj = item;
     console.log(this.selected);
+    console.log(this.anObj);
   }
 
   /// for 2nd comp //////////////////////////////
@@ -122,6 +123,7 @@ export class AppComponent {
     this.clicked = names.name;
     this.nameObj = names;
     console.log(this.clicked);
+    console.log(this.nameObj);
   }
   colored(col: string): void {
     this.clicked = col;
