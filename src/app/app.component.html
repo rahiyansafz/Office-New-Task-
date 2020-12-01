@@ -32,7 +32,7 @@
 <div>
   <ul>
     <li
-      *ngFor="let names of theArray; let j = indexTwo"
+      *ngFor="let names of theArray; let j = index"
       [class.clicked]="names.name === clicked"
       (click)="clicks(names)"
     >
