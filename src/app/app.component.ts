@@ -172,7 +172,7 @@ export class AppComponent {
   }
 }
 
-// 0. the whole list will be stacked in the first place
+// 0. the whole list will be stacked in the first place  // DONE!!!!!!!!!!!!!!!!!!!!!!
 // 1. cant be pushed same item name
 // 2. cant be added same item name of other array
 // 3. if an item which will be inputted in an array, if the name of the inputted name is in the other array, the other array name will be colored
