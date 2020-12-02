@@ -163,7 +163,7 @@ export class AppComponent {
     }
     this.nameObj = "";
     if (this.nameObj === this.nameObj) {
-      this.anArray;
+      console.log("already matched");
     }
   }
 }
