@@ -8,7 +8,7 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   title = "my-app";
   LightOn = false;
-  changeColor = false;
+  // changeColor = false;
 
   // anArray = ['Angular', 'TypeScript', 'JavaScript', 'Foundation'];
   anArray = [
@@ -161,5 +161,3 @@ export class AppComponent {
     this.nameObj = "";
   }
 }
-
-// array.push(item1, item2, ..., itemX)
