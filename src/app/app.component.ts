@@ -149,7 +149,7 @@ export class AppComponent {
       }
     }
     this.anObj = "";
-    if (this.nameObj === this.nameObj) {
+    if (this.nameObj === this.anObj) {
       console.log("already matched");
     }
   }
@@ -166,7 +166,7 @@ export class AppComponent {
       }
     }
     this.nameObj = "";
-    if (this.nameObj === this.nameObj) {
+    if (this.nameObj === this.anObj) {
       console.log("already matched");
     }
   }
