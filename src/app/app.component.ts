@@ -149,9 +149,6 @@ export class AppComponent {
       }
     }
     this.anObj = "";
-    if (this.nameObj === this.anObj) {
-      console.log("already matched");
-    }
   }
   addingDown(names: any, index: number): void {
     if (names) {
@@ -166,9 +163,6 @@ export class AppComponent {
       }
     }
     this.nameObj = "";
-    if (this.nameObj === this.anObj) {
-      console.log("already matched");
-    }
   }
 }
 
