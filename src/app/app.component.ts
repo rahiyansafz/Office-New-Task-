@@ -139,7 +139,8 @@ export class AppComponent {
         const a = this.anArray.splice(index, 1);
         // console.log('hello', a);
         console.log(index, a);
-        this.theArray.push(a[0]);
+        // this.theArray.push(a[0]);
+        this.theArray.splice(index, 0, a[0]);
       }
     }
     this.anObj = "";
@@ -152,9 +153,15 @@ export class AppComponent {
         const aT = this.theArray.splice(index, 1);
         // console.log('hello', a);
         console.log(index, aT);
-        this.anArray.push(aT[0]);
+        // this.anArray.push(aT[0]);
+        this.anArray.splice(index, 0, aT[0]);
       }
     }
     this.nameObj = "";
   }
 }
+// const months = ['Jan', 'March', 'April', 'June'];
+// months.splice(1, 0, 'Feb');
+// // inserts at index 1
+// console.log(months);
+// // expected output: Array ["Jan", "Feb", "March", "April", "June"]
