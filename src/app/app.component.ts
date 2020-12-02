@@ -77,8 +77,10 @@ export class AppComponent {
   }
 
   checkIfExists(pushed: string, array: any): number {
+    // console.log("pushed: ", pushed);
     const x = JSON.stringify(array);
     const y = x.indexOf(`"name":"${pushed}"`);
+    // console.log("x: ", x, "y: ", `"name":"${pushed}"`);
     return y;
   }
 
@@ -137,38 +139,37 @@ export class AppComponent {
   }
 
   addingUp(item: any, index: number): void {
-    if (item) {
-      const y = this.checkIfExists(item, this.theArray);
-      // console.log(y);
-      if (y === -1) {
-        const a = this.anArray.splice(index, 1);
-        // console.log('hello', a);
-        console.log(index, a);
-        // this.theArray.push(a[0]);
-        this.theArray.splice(index, 0, a[0]);
-      }
+    // if (item) {
+    const y = this.checkIfExists(item.name, this.theArray);
+    console.log(y);
+    if (y === -1) {
+      const a = this.anArray.splice(index, 1);
+      // console.log('hello', a);
+      console.log(index, a);
+      // this.theArray.push(a[0]);
+      this.theArray.splice(index, 0, a[0]);
     }
+    // }
     this.anObj = "";
   }
   addingDown(names: any, index: number): void {
-    if (names) {
-      const yT = this.checkIfExists(names, this.anArray);
-      // console.log(y);
-      if (yT === -1) {
-        const aT = this.theArray.splice(index, 1);
-        // console.log('hello', a);
-        console.log(index, aT);
-        // this.anArray.push(aT[0]);
-        this.anArray.splice(index, 0, aT[0]);
-      }
+    // if (names) {
+    const yT = this.checkIfExists(names.name, this.anArray);
+    // console.log(y);
+    if (yT === -1) {
+      const aT = this.theArray.splice(index, 1);
+      // console.log('hello', a);
+      // console.log(index, aT);
+      // this.anArray.push(aT[0]);
+      this.anArray.splice(index, 0, aT[0]);
     }
+    // }
     this.nameObj = "";
   }
 }
 
 // 0. the whole list will be stacked in the first place  // DONE!!!!!!!!!!!!!!!!!!!!!!
 // 1. cant be pushed same item name
-// 2. cant be added same item name of other array
 // 3. if an item which will be inputted in an array, if the name of the inputted name is in the other array, the other array name will be colored
 // 4. if an item is deleted or pushed to another array the selected color will be gone
 // 5. styling problems
