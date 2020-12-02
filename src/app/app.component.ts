@@ -12,12 +12,12 @@ export class AppComponent {
 
   // anArray = ['Angular', 'TypeScript', 'JavaScript', 'Foundation'];
   anArray = [
-    { name: "TypeScript", position: " was released in 1 October 2012" },
-    { name: "Angular", position: " was released in 14 September 2016" },
-    { name: "RxJs", position: " was released in Sep 3, 2015" },
-    { name: "NestJs", position: "was released in Nov 24, 2017" },
-    { name: "JavaScript", position: " was released in March 1996" },
-    { name: "Foundation", position: "  was released in September 2011" }
+    { name: "TypeScript", position: "releasedate: 1 October 2012" },
+    { name: "Angular", position: "releasedate: 14 September 2016" },
+    { name: "RxJs", position: "releasedate: Sep 3, 2015" },
+    { name: "NestJs", position: "releasedate: Nov 24, 2017" },
+    { name: "JavaScript", position: "releasedate: March 1996" },
+    { name: "Foundation", position: "releasedate: September 2011" }
   ];
 
   theArray = [
