@@ -54,6 +54,7 @@ export class AppComponent {
           position: " releasedate is unknown"
         });
       }
+      this.anObj = "";
     }
 
     this.selected = "";
@@ -109,8 +110,8 @@ export class AppComponent {
           position: " is doing !!!!!"
         });
       }
+      this.nameObj = "";
     }
-
     this.clicked = "";
   }
 
