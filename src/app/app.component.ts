@@ -161,3 +161,5 @@ export class AppComponent {
     this.nameObj = "";
   }
 }
+
+// array.push(item1, item2, ..., itemX)
