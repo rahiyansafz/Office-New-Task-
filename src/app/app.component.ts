@@ -174,9 +174,18 @@ export class AppComponent {
 // 3. if an item which will be inputted in an array, if the name of the inputted name is in the other array, the other array name will be colored
 // 4. styling problems
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // 1. array1 = array1.filter(function(val) {
 //   return array2.indexOf(val) == -1;
 // });
-// // Or, with the availability of ES6:
+// // Or
 
 // array1 = array1.filter(val => !array2.includes(val));
