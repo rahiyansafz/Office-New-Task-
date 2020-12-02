@@ -8,7 +8,7 @@
 			<ul>
 				<li *ngFor="let item of anArray; let i = index" [class.selected]="item.name === selected"
 					(click)="select(item)">
-					<span (click)="addingUp(item, i)" class="arrow">&#x27A1;</span>
+					<span (click)="addingUp(item, i)" class="arrow">&#10146;</span>
 					<!-- [style.color]="item.name === selected ? 'gray' : 'black'" -->
 					{{ item.name }}<span (click)="removeFromList(item)" class="close"
         >&times;</span>
@@ -33,7 +33,7 @@
 			<ul>
 				<li *ngFor="let names of theArray; let j = index" [class.clicked]="names.name === clicked"
 					(click)="clicks(names)">
-					<span (click)="addingDown(names, j)" class="arrow">&#x27A1;</span>
+					<span (click)="addingDown(names, j)" class="arrow">&#10147;</span>
 					{{ names.name }}
 					<span (click)="deleting(names)" class="close">&times;</span>
 				</li>
