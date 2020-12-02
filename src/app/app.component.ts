@@ -7,7 +7,7 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   title = "my-app";
-  LightOn = false;
+  // LightOn = false;
   // changeColor = false;
 
   // anArray = ['Angular', 'TypeScript', 'JavaScript', 'Foundation'];
@@ -41,9 +41,9 @@ export class AppComponent {
 
   nameObj: any = {};
 
-  OnLightOn(): void {
-    this.LightOn = !this.LightOn;
-  }
+  // OnLightOn(): void {
+  //   this.LightOn = !this.LightOn;
+  // }
 
   arrayPushing(pushed: string): void {
     pushed = pushed.trim();
