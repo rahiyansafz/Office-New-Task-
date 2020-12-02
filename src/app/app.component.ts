@@ -22,11 +22,10 @@ export class AppComponent {
 
   theArray = [
     { name: "Rahiyan", position: " is a Learner" },
-    { name: "Mizanur", position: " is an Angular Expert Delevoper" },
-    { name: "Habibur", position: " is an UI/UX Expert & Angular Delevoper" },
+    { name: "Mizanur", position: " is an Angular Expert" },
+    { name: "Habibur", position: " is an UI/UX Expert" },
     { name: "Kamrul", position: "is an Angular Delevoper" },
     { name: "Nymul", position: " is a Fantastic Designer" },
-    { name: "Ishmum", position: "  is a Designer" },
     { name: "Ifty", position: "  is a Designer" }
   ];
 
@@ -107,7 +106,7 @@ export class AppComponent {
       if (w === -1) {
         this.theArray.push({
           name: adding,
-          position: " releasedate is unknown"
+          position: " is doing !!!!!"
         });
       }
     }

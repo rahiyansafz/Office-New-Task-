@@ -1,6 +1,7 @@
 p {
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
+  /* margin: auto; */
 }
 span {
   font-size: 30px;
@@ -65,4 +66,8 @@ li:active {
   font-size: 20px;
   color: #607d8b;
   float: left;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 700;
 }
