@@ -13,4 +13,5 @@ export class TextDetailComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.inputObj);
   }
+
 }

@@ -86,6 +86,7 @@ export class AppComponent {
   removeFromList(item: any): void {
     const index = this.anArray.indexOf(item);
     this.anArray.splice(index, 1);
+    this.anObj = "";
   }
 
   select(item: any): void {
@@ -117,6 +118,7 @@ export class AppComponent {
   deleting(names: any): void {
     const num = this.theArray.indexOf(names);
     this.theArray.splice(num, 1);
+    this.nameObj = "";
   }
 
   clicks(names: any): void {
@@ -141,6 +143,7 @@ export class AppComponent {
         this.theArray.push(a[0]);
       }
     }
+    this.anObj = "";
   }
   addingDown(names: any, index: number): void {
     if (names) {
@@ -153,5 +156,6 @@ export class AppComponent {
         this.anArray.push(aT[0]);
       }
     }
+    this.nameObj = "";
   }
 }
