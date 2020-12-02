@@ -17,7 +17,9 @@ export class AppComponent {
     { name: "RxJs", position: "releasedate: Sep 3, 2015" },
     { name: "NestJs", position: "releasedate: Nov 24, 2017" },
     { name: "JavaScript", position: "releasedate: March 1996" },
-    { name: "Foundation", position: "releasedate: September 2011" }
+    { name: "Foundation", position: "releasedate: September 2011" },
+    { name: "Sass", position: "releasedate: November 28, 2006" },
+    { name: "Python", position: "releasedate: December 1989" }
   ];
 
   theArray = [
@@ -26,7 +28,9 @@ export class AppComponent {
     { name: "Habibur", position: " is an UI/UX Expert" },
     { name: "Kamrul", position: "is an Angular Delevoper" },
     { name: "Nymul", position: " is a Fantastic Designer" },
-    { name: "Ifty", position: "  is a Designer" }
+    { name: "Ifty", position: "  is a Designer" },
+    { name: "Razeeb", position: " is a Developer" },
+    { name: "Tofael", position: " is a Technotier" }
   ];
 
   selected = "";
