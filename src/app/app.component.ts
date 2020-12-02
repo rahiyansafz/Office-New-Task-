@@ -167,3 +167,8 @@ export class AppComponent {
     }
   }
 }
+
+// 1. cant be pushed same item name
+// 2. cant be added same item name
+// 3. if an item which will be inputted in an array, if the name of the inputted name is in the other array, the other array name will be colored
+// 4. styling problems
