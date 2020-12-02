@@ -172,7 +172,8 @@ export class AppComponent {
 // 1. cant be pushed same item name
 // 2. cant be added same item name of other array
 // 3. if an item which will be inputted in an array, if the name of the inputted name is in the other array, the other array name will be colored
-// 4. styling problems
+// 4. if an item is deleted or pushed to another array the selected color will be gone
+// 5. styling problems
 
 //
 //
