@@ -197,3 +197,17 @@ export class AppComponent {
 // // Or
 
 // array1 = array1.filter(val => !array2.includes(val));
+
+// if (pushed === "") {
+//   alert("input something");
+//   this.anObj = "";
+//   this.selected = "";
+//   this.clicked = "";
+// }
+
+// if (adding === "") {
+//   alert("input something");
+//   this.nameObj = "";
+//   this.clicked = "";
+//   this.selected = "";
+// }
