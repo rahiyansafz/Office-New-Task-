@@ -94,6 +94,7 @@ export class AppComponent {
     this.anArray.splice(index, 1);
     this.anObj = "";
     this.selected = "";
+    this.clicked = "";
   }
 
   select(item: any): void {
@@ -127,6 +128,7 @@ export class AppComponent {
     this.theArray.splice(num, 1);
     this.nameObj = "";
     this.clicked = "";
+    this.selected = "";
   }
 
   clicks(names: any): void {
