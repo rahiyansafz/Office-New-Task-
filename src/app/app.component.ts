@@ -93,6 +93,7 @@ export class AppComponent {
     const index = this.anArray.indexOf(item);
     this.anArray.splice(index, 1);
     this.anObj = "";
+    this.selected = "";
   }
 
   select(item: any): void {
@@ -125,6 +126,7 @@ export class AppComponent {
     const num = this.theArray.indexOf(names);
     this.theArray.splice(num, 1);
     this.nameObj = "";
+    this.clicked = "";
   }
 
   clicks(names: any): void {
@@ -151,6 +153,7 @@ export class AppComponent {
     }
     // }
     this.anObj = "";
+    this.selected = "";
   }
   addingDown(names: any, index: number): void {
     // if (names) {
@@ -165,6 +168,7 @@ export class AppComponent {
     }
     // }
     this.nameObj = "";
+    this.clicked = "";
   }
 }
 
