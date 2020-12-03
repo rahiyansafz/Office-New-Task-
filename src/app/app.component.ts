@@ -154,6 +154,7 @@ export class AppComponent {
     // }
     this.anObj = "";
     this.selected = "";
+    this.clicked = "";
   }
   addingDown(names: any, index: number): void {
     // if (names) {
@@ -168,6 +169,7 @@ export class AppComponent {
     }
     // }
     this.nameObj = "";
+    this.selected = "";
     this.clicked = "";
   }
 }
