@@ -96,7 +96,6 @@ export class AppComponent {
   }
 
   select(item: any): void {
-    window.event.cancelBubble = true;
     this.selected = item.name;
     this.anObj = item;
     console.log(this.selected);
@@ -129,7 +128,6 @@ export class AppComponent {
   }
 
   clicks(names: any): void {
-    window.event.cancelBubble = true;
     this.clicked = names.name;
     this.nameObj = names;
     console.log(this.clicked);
@@ -157,23 +155,16 @@ export class AppComponent {
   addingDown(names: any, index: number): void {
     // if (names) {
     const yT = this.checkIfExists(names.name, this.anArray);
-    // console.log(y);
+    console.log(yT);
     if (yT === -1) {
       const aT = this.theArray.splice(index, 1);
       // console.log('hello', a);
-      // console.log(index, aT);
+      console.log(index, aT);
       // this.anArray.push(aT[0]);
       this.anArray.splice(index, 0, aT[0]);
     }
     // }
     this.nameObj = "";
-  }
-  khali() {
-    window.event.cancelBubble = true;
-    this.selected = "";
-    this.clicked = "";
-    console.log(this.selected);
-    console.log(this.clicked);
   }
 }
 
