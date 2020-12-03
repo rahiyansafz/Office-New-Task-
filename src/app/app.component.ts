@@ -96,6 +96,7 @@ export class AppComponent {
   }
 
   select(item: any): void {
+    window.event.cancelBubble = true;
     this.selected = item.name;
     this.anObj = item;
     console.log(this.selected);
@@ -128,6 +129,7 @@ export class AppComponent {
   }
 
   clicks(names: any): void {
+    window.event.cancelBubble = true;
     this.clicked = names.name;
     this.nameObj = names;
     console.log(this.clicked);
@@ -165,6 +167,13 @@ export class AppComponent {
     }
     // }
     this.nameObj = "";
+  }
+  khali() {
+    window.event.cancelBubble = true;
+    this.selected = "";
+    this.clicked = "";
+    console.log(this.selected);
+    console.log(this.clicked);
   }
 }
 
