@@ -104,7 +104,7 @@ export class AppComponent {
     console.log(this.anObj);
   }
 
-  /// for 2nd comp //////////////////////////////
+  /// for 2nd List //////////////////////////////
 
   arrayAdding(adding: string): void {
     adding = adding.trim();
