@@ -98,6 +98,7 @@ export class AppComponent {
   }
 
   select(item: any): void {
+    // window.event.cancelBubble = true;
     this.selected = item.name;
     this.anObj = item;
     console.log(this.selected);
@@ -132,6 +133,7 @@ export class AppComponent {
   }
 
   clicks(names: any): void {
+    // window.event.cancelBubble = true;
     this.clicked = names.name;
     this.nameObj = names;
     console.log(this.clicked);
@@ -174,6 +176,13 @@ export class AppComponent {
     this.selected = "";
     this.clicked = "";
   }
+  //   khali(): void {
+  //   window.event.cancelBubble = true;
+  //   this.selected = '';
+  //   this.clicked = '';
+  //   this.nameObj = '';
+  //   this.anObj = '';
+  // }
 }
 
 // 0. the whole list will be stacked in the first place  // DONE!!!!!!!!!!!!!!!!!!!!!!
